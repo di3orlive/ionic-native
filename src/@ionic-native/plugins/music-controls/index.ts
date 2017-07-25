@@ -83,7 +83,7 @@ export interface MusicControlsOptions {
  *      			break;
  *          case 'music-controls-seek-to':
  *            const seekToInSeconds = JSON.parse(action).position;
- *            MusicControls.updateElapsed({
+ *            this.musicControls.updateElapsed({
  *              elapsed: seekToInSeconds,
  *              isPlaying: true
  *            });
@@ -105,6 +105,7 @@ export interface MusicControlsOptions {
  *      			break;
  *      	}
  *      }
+ *    });
  *
  *  this.musicControls.listen(); // activates the observable above
  *
